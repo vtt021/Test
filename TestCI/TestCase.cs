@@ -212,21 +212,5 @@ namespace TestCI
                 throw;
             }
         }
-
-        [Test]
-        public void TestCase_13()
-        {
-            Triangle _tri = new Triangle(1, 1, 2);
-            try
-            {
-                Assert.AreEqual("KHONG PHAI TAM GIAC", _tri.checkValid());
-                Assert.AreEqual("KHONG CO CHU VI", _tri.tinhChuVi());
-            }
-            catch (Exception ex)
-            {
-                tsw.WriteLine(TestContext.CurrentContext.Result.Message);
-                throw;
-            }
-        }
     }
 }
